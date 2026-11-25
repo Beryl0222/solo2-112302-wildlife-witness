@@ -1,0 +1,19 @@
+{
+  "说明": "站内登记知识，依据 data/corpus.json 中 l1/l2/a1 记录转写；柳滩、浅滩为保持区段内候选集完整而补登的普通地点。",
+  "public_segment": "beicha",
+  "nodes": [
+    {"id": "beicha", "name": "北汊", "kind": "区段", "parent": null, "aliases": []},
+    {"id": "changqiao", "name": "长桥", "kind": "地标", "parent": "beicha", "aliases": ["红桥", "旧桥头", "桥脚", "桥下", "桥头"]},
+    {"id": "dongjiao", "name": "东脚", "kind": "巡护径", "parent": "changqiao", "aliases": ["桥东"]},
+    {"id": "xijiao", "name": "西脚", "kind": "巡护径", "parent": "changqiao", "aliases": ["桥西"]},
+    {"id": "caoduo", "name": "草垛", "kind": "地标", "parent": "dongjiao", "aliases": []},
+    {"id": "shiwan", "name": "石湾", "kind": "地标", "parent": "dongjiao", "aliases": []},
+    {"id": "yandi2", "name": "二号盐地", "kind": "繁育点", "parent": "dongjiao", "aliases": ["盐地"], "protected": true},
+    {"id": "liutan", "name": "柳滩", "kind": "地标", "parent": "xijiao", "aliases": []},
+    {"id": "qiantan", "name": "浅滩", "kind": "地标", "parent": "xijiao", "aliases": []}
+  ],
+  "people": [
+    {"name": "齐松", "aliases": ["小齐"], "can_patrol": ["dongjiao"]},
+    {"name": "米乐", "aliases": ["小米"], "can_patrol": ["xijiao"]}
+  ]
+}
